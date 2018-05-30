@@ -1,0 +1,69 @@
+<html lang="en">                                   
+   <body>
+      <div id="particles-js">
+      
+   <head>                                          
+      <link rel='stylesheet' href='styles.css'>    
+      <title>CRUD template</title>                 
+   </head>                                         
+      <center>
+         <img src="Track1.jpg" border="0px" 
+               width="400px" height="100px" >
+      </center>
+      <br>
+      <br>
+      <center>
+         <form action='create1.php' method = 'post'><!--needed to send/post info to php file !-->
+            <input type='text' placeholder='Full Name' name='StudentName' event="advancedSearchTextBox">
+            <select id='select' name='eventName'>
+                 <option value="100 Meter" >100 Meter</option>
+               <option value="110 & 100 Meter Hurdles" >110 & 100 Meter Hurdles</option>
+               <option value="200 Meter" >200 Meter</option>
+               <option value="300 Meter Intermediate Hurdles" >300 Meter Intermediate Hurdles</option>
+               <option value="400 Meter" >400 Meter</option>
+               <option value="800 Meter" >800 Meter</option>
+               <option value="1600 Meter" >1600 Meter</option>
+               <option value="3200 Meter" >3200 Meter</option>
+               <option value="4x100 Meter" >4x100 Meter</option>
+               <option value="4x200 Meter" >4x200 Meter</option>
+               <option value="4x400 Meter" >4x400 Meter</option>
+               <option value="4x800 Meter" >4x800 Meter</option>
+            </select>
+           <select id='select' name='year'>
+                 <option value="9" >9</option>
+                 <option value="10" >10</option>
+                 <option value="11" >11</option>
+                 <option value="12" >12</option>
+            </select>
+            <input name = 'create' type = 'submit' value = 'Submit Info'>
+         </form>
+         Find the roster for the selected event
+         <form action= 'read1.php' method = 'post'>
+            <select id='select' name='eventName'>
+               <option value="100 Meter" >100 Meter</option>
+               <option value="110 & 100 Meter Hurdles" >110 & 100 Meter Hurdles</option>
+               <option value="200 Meter" >200 Meter</option>
+               <option value="300 Meter Intermediate Hurdles" >300 Meter Intermediate Hurdles</option>
+               <option value="400 Meter" >400 Meter</option>
+               <option value="800 Meter" >800 Meter</option>
+               <option value="1600 Meter" >1600 Meter</option>
+               <option value="3200 Meter" >3200 Meter</option>
+               <option value="4x100 Meter" >4x100 Meter</option>
+               <option value="4x200 Meter" >4x200 Meter</option>
+               <option value="4x400 Meter" >4x400 Meter</option>
+               <option value="4x800 Meter" >4x800 Meter</option>>
+            </select>
+               <p></p>
+            <input name = 'read'   type = 'submit' value = 'Find Info'>
+         </form>
+      </center>
+      <!--<center>-->
+      <!--   <img src="HurdlesBackground.jpg" border="0px" -->
+      <!--         width="1000px" height="550px" >-->
+      <!--</center>-->
+   </body>
+   </div>
+   <script type="text/javascript" src="particles.js"></script>
+      <script type="text/javascript" src="app.js"></script>
+   </body>
+</html>
